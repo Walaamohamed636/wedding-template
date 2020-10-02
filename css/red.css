@@ -1,0 +1,42 @@
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .active .nav-link,
+nav .navbar-brand:hover ,
+.couples .couple-img .inner-img i,
+.couples .couple-img .inner-img h1,
+.love-story .love-story-img .love-text h1,
+.love-story .love-story-img .love-img .fa-heart,
+.love-story .love-story-img .container .row div:nth-of-type(4) .fa-heart,
+.love-story .love-story-img .container .row div:nth-of-type(8) .fa-heart,
+.love-story .love-story-img .love-text .fa-heart,
+.celebrate .celebrate-inner .date,
+.people .container .vv .groom i
+{
+    color:#CC3A3B !important;
+}
+
+.couples .couple-img .inner-img i,
+.people .container .vv .groom i{
+    
+    border:1px solid #CC3A3B;}
+.couples .couple-img .inner-img img{
+    border: 10px solid #CC3A3B;
+}
+.celebrate .celebrate-inner{
+    border:5px solid #CC3A3B;
+}
+.people .container .active ,
+.celebrate,
+.invite,
+.invite .invite-form button,
+.menue .cog
+{
+    background-color:#CC3A3B
+}
+
+
+.footer-text img,.celebrate .celebrate-inner img
+{
+    filter: hue-rotate(-337deg);
+
+
+}

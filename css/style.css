@@ -1,0 +1,741 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/*fonts*/
+body{
+    height:5000px;
+    background-color: #F3F2F1;
+}
+*{
+    margin:0;
+    padding:0;
+    /*font-family: 'Great Vibes', cursive;*/
+
+}
+/*fixed style*/
+i{
+    cursor: pointer;
+}
+
+/*jq style*/
+.background{
+    background-color:white !important;
+    
+}
+.color{
+    color:black !important;
+}
+/*start header*/
+.body{
+    width:100%;
+    height:100vh;
+    
+    
+    
+    position: relative;
+    transition: all .3s linear;
+    text-transform: capitalize;
+    
+}
+.body .overlay{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color:rgb(0, 0, 0,.6);
+    z-index:1
+}
+.body .carousel,.body .carousel .carousel-inner{
+    width:100%;
+    height:100vh
+}
+
+nav{
+    padding-top:6px !important ;
+    padding-bottom: 6px !important;
+    text-transform:capitalize;
+    font-weight:600;
+    background: #0807078c;
+}
+ .navbar-light .navbar-brand{
+    color: white;
+    font-size: 30px;
+    transition: all .3s linear;
+    font-family: 'Great Vibes', cursive;
+}
+nav::after{
+    content:"";
+    background-color: #CCCCCC;
+    position:fixed;
+    right:0;
+    left:0;
+    top:66px;
+    height:.5px
+    
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: #ffffff;}
+
+ nav .navbar-nav .nav-link:hover, nav .navbar-nav .active .nav-link, nav .navbar-brand:hover {
+    
+    transition: all .3s linear;
+}
+ nav .navbar-nav .nav-item{
+    margin-right:10px
+}
+.navbar-light .navbar-nav .nav-link {
+    color:white ;
+    font-size:18px
+}
+nav .active{
+    display: block;
+}
+
+.body .overlay .overlay-text{
+    color:white;
+    position:relative;
+    z-index: 2;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+    
+    text-align:center
+}.body .overlay .overlay-text h4{
+    font-size:20px;
+    animation: fady 1s  ease forwards;
+    opacity:0
+    
+}
+@keyframes fady{
+    0%{
+        transform:translateY(-50px)
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0)
+    }
+}
+.body .overlay .overlay-text h1{
+    padding:25px 0;
+    font-size:80px;
+    font-family: 'Great Vibes', cursive;
+    animation: fady 1s  ease forwards;
+    animation-delay:.5s ;
+    opacity:0;
+}
+.body .overlay .overlay-text span{
+    display:block;
+    border:1px solid white;
+    width:150px;
+    height:45px;
+    margin:auto;
+    line-height: 40px;
+    border-radius: 100px;
+    opacity:0;
+    font-size:20px;
+    animation: fady 1s  ease forwards;
+    animation-delay: .5s;
+    
+}
+/*start fixed menue*/
+.menue{
+    position:fixed;
+   
+    width:300px;
+    top:100px;
+    right:-300px;
+    z-index:999999;
+    height:auto;
+    background-color:white
+}
+.menue h4{
+    text-transform:capitalize;
+    font-size:20px;
+    margin-top:5vh
+}
+.menue .colors span{
+    width:25px;
+    height:25px;
+    display: inline-block;
+    margin-right:5px
+}
+.menue .cog{
+    top:40%;
+    position:absolute;
+    left:-40px;
+    color:white;
+    width:40px;
+    height:40px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    text-align: center;
+    
+}
+.menue .cog i{
+    margin:12px 0
+}
+
+/*end header*/
+/*start couples*/
+.couples {
+    padding:80px 0 ;
+}
+.couples .couple-text{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    margin:0 0 80px
+
+}
+.couples .couple-img .inner-img .fa-heart{
+    
+    
+    position: absolute;
+    top: 142px;
+    font-size: 18px;
+    right: -15px;
+    border-color: transparent;
+    background-color: #F3F2F1;
+    z-index: 1;
+}
+.couples .couple-img .inner-img:first-of-type::after {
+    content:"";
+    background-color:#CCCCCC ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width:1px
+}
+.couples .couple-img .inner-img img{
+    border-radius: 50%;
+    width:100%;
+    max-width: 280px;
+   
+   
+}
+.couples .couple-img .inner-img h1{
+    padding:10px 0;
+    font-family: 'Great Vibes', cursive;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+.couples .couple-img .inner-img p{
+    color:#666262;
+    padding:0 50px
+}
+.couples .couple-img .inner-img i{
+    
+    border:1px solid transparent;
+    border-radius:50%;
+    width: 30px;
+    height:30px;
+    line-height: 30px;
+}
+/*responsive*/
+@media (max-width: 767.98px) { 
+    .couples .couple-img .inner-img:first-of-type::after {
+        content: none;
+    } 
+    .couples .couple-img .inner-img .fa-heart{
+        display:none
+    }
+}
+
+
+/*end couples*/
+/*start love-story*/
+.love-story {
+    padding:80px 0 ;
+}
+.love-story .love-story-text{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    margin:0 0 80px
+
+}
+.love-story .love-story-img .love-img .fa-heart,
+.love-story .love-story-img .love-text .fa-heart
+{
+    
+    
+    position: absolute;
+    top: 6px;
+    font-size: 18px;
+    left: -16px;
+    border-color: transparent;
+    background-color: #F3F2F1;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    text-align:center;
+    border-radius:50%
+}
+
+.love-story .love-story-img .container .row .love-item:nth-of-type(odd) .love-text::after/*
+ .love-story .love-story-img .container .row div:nth-of-type(3)::after, 
+.love-story .loe-story-img .container .row div:nth-of-type(5)::after,
+.love-story .love-story-img .container .row div:nth-of-type(7)::after */{
+    content:"";
+    background-color:#CCCCCC ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width:1px}
+    .love-story .love-story-img .container .row .love-item:nth-of-type(even) .love-text::after{
+    content:"";
+    background-color:#CCCCCC ;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -1px;
+    width:1px
+}
+.love-story .love-story-img .container .row .love-item:nth-of-type(even) .row{
+    flex-direction: row-reverse;
+}
+.love-story .love-story-img .love-img , .love-story .love-story-img .love-text{
+    
+    width:100%;
+    padding:40px 50px
+   
+   
+}
+.love-story .love-story-img .love-img{
+    position: relative;
+}
+.love-story .love-story-img .love-text h1{
+    
+    
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.love-story .love-story-img .love-text p{
+    color:#666262;
+    padding:0px;
+    margin: 8px
+}
+.love-story .love-story-img .love-text p:first-of-type{
+    color:#1d1b1b;
+    font-weight:600
+}
+/*one*/
+
+.love-story .love-story-img .container .row div:nth-of-type(4) .fa-heart,
+.love-story .love-story-img .container .row div:nth-of-type(8) .fa-heart
+{
+    
+    
+    position: absolute;
+    top: 6px;
+    font-size: 18px;
+   left:-16px;
+    border-color: transparent;
+    background-color: #F3F2F1;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;    text-align: center;
+    border-radius: 50%;
+
+}
+.love-story .love-story-img .container .row div:nth-of-type(7),
+.love-story .love-story-img .container .row div:nth-of-type(8) 
+ {
+    padding-bottom:0
+}
+/*responsive*/
+@media (max-width: 767.98px) { 
+    .love-story .love-story-img .container .row .love-item:nth-of-type(odd) .love-text::after,
+    .love-story .love-story-img .container .row .love-item:nth-of-type(even) .love-text::after{
+        content: none;
+    }
+    .love-story .love-story-img .container .row div .fa-heart{
+        display: none;
+    }
+    .love-story .love-story-img .love-img , .love-story .love-story-img .love-text{
+        padding:0
+    }
+    .love-story .love-story-img .container .row .love-item{
+        margin-bottom: 50px;
+        padding: 0 30px;
+    }
+
+    .love-story .love-story-img .love-text p{
+        margin:0;
+        margin-bottom: 15px;
+    }
+
+ }
+/*end couples*/
+/*start celebrate*/
+.celebrate{
+    
+    width:100%;
+    padding:80px 0;
+    
+}
+
+.celebrate .celebrate-text{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    
+    color:white
+
+}
+.celebrate .container .row{
+    justify-content: center;
+    
+}
+.celebrate .celebrate-outer{
+    background-color:white;
+    height:400px;
+    padding:0;
+   margin:0 15px;
+    box-shadow: 0 0 10px #888;
+   position: relative;
+   margin-top: 150px;
+   
+    
+}
+/*responsive*/
+.celebrate .celebrate-outer2{
+    margin-top: 20px;
+}
+
+.celebrate .margin-upp{
+    top:-40px;
+}
+.celebrate .celebrate-inner{
+    
+   position: absolute;
+   top:15px;
+   bottom:15px;
+   right:15px;
+   left:15px;
+   padding:20px;
+   color:rgb(97, 94, 94);
+   font-size: 17px;
+}
+.celebrate .celebrate-inner h3{
+  border-bottom: 1px solid #888;;
+    font-size: 25px;
+    padding: 20px 0 10px;
+    color:black;
+    text-transform: capitalize;
+    width: 117px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.celebrate .celebrate-inner .date{
+    display:block;
+    font-weight: 500;
+    font-size:18px
+   
+}
+.celebrate .celebrate-inner p span{
+    padding-top:10px;
+    display:block;
+
+}
+.celebrate .margin-upp{
+    margin-bottom:-10px
+}
+.celebrate .celebrate-inner img{
+    width: 100px;
+    height: 50px;
+    
+    position: absolute;
+    bottom: -2px;
+    text-align: center;
+    left: 50%;
+    
+    margin-left: -50px;
+    }
+/*end celebrate*/
+/*start people*/
+.people {
+    
+    height:auto;
+    width:100%;
+    
+    
+    
+}
+.people .people-text{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    padding:80px 0;
+    color:black;
+    margin:0
+}
+.people .container button{
+    border:none;
+    outline:none;
+    color:black;
+    background-color:#DEDEDE;
+    margin-right:10px;
+    padding:10px;
+    text-transform:capitalize
+
+}
+.people .container .active{
+    color:white
+}
+.people .container .vv>div{
+    height:auto;
+    background-color: white;
+    margin:0  15px 15px ;
+    display:block;
+
+}
+.people .container .vv{
+    padding:80px 0 0;
+}
+.people .container .vv .groom p{
+    margin-bottom:0;
+    text-transform: capitalize;
+    font-size:17px;
+    color:#888
+}
+.people .container .vv .groom p:first-of-type{
+    font-weight:600;
+    color:black
+}
+.people .container .vv .groom i{
+     margin:20px 2px ;
+    border:1px solid transparent;
+    border-radius:50%;
+    width: 30px;
+    height:30px;
+    line-height: 30px;
+}.people .container .vv .groom {
+   padding:15px;
+ 
+}
+.people .container .vv .groom img{
+   max-width:100%;
+    height:250px;
+    box-shadow:0 0 10px #888;
+    position:relative;
+    top:-20px;
+    
+    
+}
+.people .container .vv .groom:hover img{
+    transform:scale(.9);
+    transition: all .5s linear ;
+}
+/*end people*/
+/*start memory*/
+.memories{
+    
+    width:100%;
+    padding:80px 0  ;
+   
+}
+.memories .memories-text{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 50px;
+   
+    color:black;
+    margin-bottom:80px 
+}
+.memories .container .row .gallery{
+    margin:15px;
+    padding:0px;
+    overflow:hidden;
+    transition: all .5s ease;
+}
+.memories .container .row .gallery img{
+    width:100%;
+    height:100%;
+    transform:scale(1.1);
+    transition: all .5s ease;
+}
+.memories .container .row .gallery:hover img{
+    transform:scale(1);
+    transition: all .5s ease;
+}
+/* pop-up of memory*/
+.popup-memory{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:999999;
+    background-color: rgb(0, 0, 0,.9);
+    display:none
+}
+.popup-memory .inner-popup{
+    width:100%;
+    
+    
+    text-align: center;
+    position:relative;
+    top:50%;
+    margin-top:-200px
+}
+.popup-memory .inner-popup img{
+    max-width:100%;
+    max-height:400px;
+    width:auto;
+    height:auto;
+
+   
+}
+.popup-memory .inner-popup i{
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    font-size: 26px;
+    
+    color:white
+}
+
+/*end memory*/
+/*start invite*/
+.invite{
+    
+    width:100%;
+    padding:80px 0 ;
+   color:white
+}
+
+.invite .invite-text h1{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 50px;
+   
+    color:white;
+    margin-bottom:10px 
+}
+.invite .invite-form {
+    background-color: white;
+    width:50%;
+    
+    margin:auto;
+    padding: 50px 40px;
+}
+.invite .invite-form input,
+.invite .invite-form select,
+.invite .invite-form textarea,
+.invite .invite-form button
+{
+    
+    display: inline-block;
+    padding: 10px;
+    outline:0;
+    margin-bottom:25px;
+    font-size:18px;
+    resize: none;
+border: 1px solid #999794
+    
+  
+}
+.invite .invite-form button{
+    width:100px;
+    border: 0;
+    color: white;
+    margin:0
+}
+.invite .invite-form button a{
+    color: white;
+    text-decoration: none;
+}
+.invite .invite-form select{
+    width:100%
+}
+/*end invite*/
+/*start footer*/
+footer{
+    padding:120px 0 80px
+}
+footer .footer-text {
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    
+    color:black;
+    margin:0 ;
+    width:400px;
+    height:400px;
+    text-align: center;
+    margin:auto;
+    border-radius:50%;
+    
+   position: relative;
+    
+}
+footer .footer-text h1{
+    padding-top: 30%;
+    font-size: 50px;
+}
+footer .footer-text span{
+    display:block
+}
+footer .footer-text img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    transform:rotate(100deg)
+}
+footer p{
+    text-transform: capitalize;
+    font-family: 'Great Vibes', cursive;
+    color:black;
+    font-size:40px;
+    margin-bottom:0 !important
+};
+p{
+    margin-bottom:0
+}
+/*end footer*/
+
+/*dark mode*/
+body.dark .menue{
+    background-color:black;
+    color:white;
+}
+body.dark .couples, body.dark .love-story,  body.dark .people, body.dark .invite .invite-form{
+    background-color:black;
+    color:white; 
+}
+body.dark .celebrate .celebrate-outer{
+    background-color:black
+}
+body.dark .people .people-text, body.dark footer .footer-text h1{
+    color:white
+}
+body.dark nav{
+    background-color:#1d1b1b !important;
+    color:white !important
+}
+body.dark nav a{
+    color:white !important
+}
+body.dark nav ul a{
+    color:white !important
+}
