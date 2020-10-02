@@ -1,2 +1,2 @@
 # wedding-template-design
- template about widding by css html bootstrap and jquery 
+ template about wedding by css html bootstrap and jquery with the ability to change color themes and mode of the website
